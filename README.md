@@ -19,7 +19,7 @@ It is a GUI tool and can convert many file types (not jsut PDF) to a safe and re
 
 However, for my needs Dangerzone was not necessary and I hate firing up Docker just to run an app, so I wrote this quick and dirty shell script to use open source softwares to do similar things.
 
-It uses the following app, which you may or may not already have installed:
+It uses the following OpenSource apps, which you may or may not already have installed:
 
 -   [ImageMagick](https://imagemagick.org/index.php)
 -   [QPDF](https://qpdf.readthedocs.io/en/stable/)
