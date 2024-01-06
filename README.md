@@ -12,7 +12,7 @@ I looked into several options however they were not ideal for my needs:
 -   Proprietary: not sure what goes on under the hood
 -   SaaS: requires uploading your PII contained PDF onto the cloud service in order to redact (helllll... no)
 
-There is a good option in [Dangerzone](https://dangerzone.rocks/about.html). It is an open source project created by Micah Lee, a software developer @ the Intercept [Micah Lee](https://theintercept.com/staff/micah-lee/).
+There is a good option in [Dangerzone](https://dangerzone.rocks/about.html). It is an open source project created by [Micah Lee](https://theintercept.com/staff/micah-lee/), a software developer @ the Intercept.
 It is a GUI tool and can convert many file types (not jsut PDF) to a safe and redacted PDF and worth checking out. Even if you don't plan on using it, it still is worth reading the above Dangerzone page.
 
 # Script
