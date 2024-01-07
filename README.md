@@ -2,6 +2,7 @@
 
 I recently had to submit my academic transcripts along with a job application.  
 The company requires that PII (Personally Identifiable Information) to be redacted since they cannot guarantee that such info will be properly guarded.
+As such, I need a way to redact PDF files that is secure and irreversible.
 
 ## Prior Arts
 
@@ -13,7 +14,7 @@ I looked into several options however they were not ideal for my needs:
 -   SaaS: requires uploading your PII contained PDF onto the cloud service in order to redact (helllll... no)
 
 There is a good option in [Dangerzone](https://dangerzone.rocks/about.html). It is an open source project created by [Micah Lee](https://theintercept.com/staff/micah-lee/), a software developer @ the Intercept.
-It is a GUI tool and can convert many file types (not jsut PDF) to a safe and redacted PDF and worth checking out. Even if you don't plan on using it, it still is worth reading the above Dangerzone page.
+It is a GUI tool and can convert many file types (not just PDF) to a safe and redacted PDF and worth checking out. Even if you don't plan on using it, it still is worth reading the above Dangerzone page.
 
 # Script
 
@@ -29,11 +30,11 @@ It uses the following OpenSource apps, which you may or may not already have ins
 
 Essentially, it
 
--   decrypt the PDF (if encrypted with an owner password)
+-   decrypts the PDF (if encrypted with an owner password)
 -   splits it into pages
--   converts each split into a 300 dpi by 300 dpi PNG image
+-   converts each split into a 600 dpi by 600 dpi PNG image
 -   opens up Gimp for each image and waits for you to redact / draw black boxes on your sensitive information
 -   after you're done, just save the split image file (overwriting it)
--   then it converts the redacted split file back into PDF
+-   then it converts each redacted split file back into PDF
 -   and merges them into a whole PDF file with name: `[original_name_here]_redacted.pdf`
 -   That's it!
